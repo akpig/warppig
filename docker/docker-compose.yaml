@@ -1,0 +1,15 @@
+version: '3.3'
+
+networks:
+  warppig:
+
+
+services:
+  warppig:
+    build: ./
+    volumes:
+      - ./warppig_config:/config
+    ports:
+      - 3000:3000
+      - 3001:3001
+
