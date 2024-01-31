@@ -1,5 +1,8 @@
 # Warp Pig
 
+## platform code
+[https://github.com/akpig/warppig/releases](https://github.com/akpig/warppig/releases)
+
 ## communication and interaction channels
 - telegram channel: [@warppig](https://t.me/warppig)
 - telegram group: [@warppig1](https://t.me/warppig1)
@@ -34,4 +37,17 @@ Warp Pig is a custom proxy tool for exporting the Cloudflare Warp network to SOC
     Cache directory is used to cache running info for next running
 
 
-
+## docker
+1. docker
+    ```
+    docker run -it -v $(pwd)/warppig_config:/config -p 3000:3000 -p 3001:3001 akpig/warppig
+    ```
+2. docker-compose
+    - download
+    ```
+    curl -L https://raw.githubusercontent.com/akpig/warppig/main/docker/docker-compose.yaml -o docker-compose.yaml
+    ```
+    - run
+    ```
+    docker-compose up -d
+    ```

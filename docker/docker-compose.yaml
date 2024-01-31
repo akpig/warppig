@@ -6,7 +6,7 @@ networks:
 
 services:
   warppig:
-    build: ./
+    image: akpig/warppig:latest
     volumes:
       - ./warppig_config:/config
     ports:
