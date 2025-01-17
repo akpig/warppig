@@ -40,7 +40,7 @@ Warp Pig is a custom proxy tool for exporting the Cloudflare Warp network to SOC
 ## docker
 1. docker
     ```
-    docker run -it -v $(pwd)/warppig_config:/config -p 3000:3000 -p 3001:3001 akpig/warppig
+    docker run --rm -it -v $(pwd)/warppig_config:/config -p 3000:3000 -p 3001:3001 akpig/warppig
     ```
 2. docker-compose
     - download
